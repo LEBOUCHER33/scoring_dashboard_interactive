@@ -1,35 +1,61 @@
 """
 Script de création d'une interface utilisateur web avec la lib Steamlit.
 
-On va développer une interface web intéractive pour que le client puisse intéragir avec le modèle de scoring de crédit.
 
-Avec Steamlite on utilise directement le langage Python, et non du html
+Objectif : 
+Développer une interface web intéractive pour inférer sur l'api de scoring et illustrer les résultats obtenus.
+
+Workflow de l'application web :
+
+1- charger un fichier csv contenant des données clients,
+2- sélectionner un ou plusieurs clients, 
+3- envoyer les données à l'API de scoring de crédit, 
+4- recevoir en retour et afficher les résultats de la prédiction sous plusieurs formats (valeur prédite, probabilité, explainabilité).
+5- afficher les résultats dans l'interface web avec différentes visualisations.
+
+on utilisera la lib streamlit pour créer l'interface web et on la développera en python
 
 """
 
-# 1- Import des librairies
+# ///////////////////////////////////
+# 1- Configuration du script
+# ///////////////////////////////////
 
+
+# import des bibliothèques nécessaires
 import streamlit as st
 import requests
 import pandas as pd
 import numpy as np
+from loguru import logger
+
+# définition des logger
+logger.add("logs/app.log", format="{time} {level} {message}", level="INFO")
+logger.add("logs/app_error.log", format="{time} {level} {message}", level="ERROR")
+logger.add("logs/app_debug.log", format="{time} {level} {message}", level="DEBUG")
 
 
-
+# ///////////////////////////////////
 # 2- Définition de l'interface web
+# ///////////////////////////////////
 
+
+# titre de l'application
 st.title("Scoring de crédit")
+logger.info("Application started")
 
-# 3- chargement du fichier csv contenant les données réelles
+# chargement du fichier csv contenant les données réelles
 
 uploaded_file = st.file_uploader("upload your csv file", type="csv")
+logger.info("File uploaded")
+logger.debug(f"Uploaded file: {uploaded_file}")
 
 if uploaded_file:
     df_data = pd.read_csv(uploaded_file)
     st.write("Preview of your data:")
     st.dataframe(df_data.head())
 
-# 4- sélection de un ou plusieurs clients
+# sélection de un ou plusieurs clients
 
 # filtre sur le dataframe
 st.subheader("Select clients to predict")
@@ -49,7 +75,7 @@ if selected_indices:
 # 5- envoyer une requête https pour interroger l'api et renvoyer la prédiction
 
 if st.button("Get Predictions"):
-    data_json = {"features": df_processed.to_dict(orient="records")}
+    data_json = df_processed.to_dict(orient="records")
     url = "http://127.0.0.1:8000/predict"  # localhost
     url_cloud = "https://client-scoring-model.onrender.com/predict"
     response = requests.post(url_cloud, 

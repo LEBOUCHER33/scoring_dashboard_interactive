@@ -32,7 +32,7 @@ logger.info(f"Demarrage du script de test de l'api de scoring, URL de l'API: {ur
 data = pd.read_csv("../data_test.csv")
 
 # selectionner un echantillon de 5 lignes
-data_sample = data.sample(n=1, random_state=42)
+data_sample = data.sample(n=5, random_state=42)
 logger.info(f"Echantillon de donnees selectionne pour le test de l'API :\n{data_sample}")
 
 # nettoyer les donnees

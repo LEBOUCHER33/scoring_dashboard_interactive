@@ -1,0 +1,57 @@
+2025-10-28T14:32:46.721866+0100 INFO Application started
+2025-10-28T14:32:46.721866+0100 INFO File uploaded
+2025-10-28T14:32:46.721866+0100 DEBUG Uploaded file: None
+2025-10-28T14:32:55.890957+0100 INFO Application started
+2025-10-28T14:32:55.890957+0100 INFO Application started
+2025-10-28T14:32:55.904910+0100 INFO File uploaded
+2025-10-28T14:32:55.904910+0100 INFO File uploaded
+2025-10-28T14:32:55.913358+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:32:55.913358+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:02.432426+0100 INFO Application started
+2025-10-28T14:33:02.432426+0100 INFO Application started
+2025-10-28T14:33:02.432426+0100 INFO Application started
+2025-10-28T14:33:02.450253+0100 INFO File uploaded
+2025-10-28T14:33:02.450253+0100 INFO File uploaded
+2025-10-28T14:33:02.450253+0100 INFO File uploaded
+2025-10-28T14:33:02.451163+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:02.451163+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:02.451163+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:05.151356+0100 INFO Application started
+2025-10-28T14:33:05.151356+0100 INFO Application started
+2025-10-28T14:33:05.151356+0100 INFO Application started
+2025-10-28T14:33:05.151356+0100 INFO Application started
+2025-10-28T14:33:05.172163+0100 INFO File uploaded
+2025-10-28T14:33:05.172163+0100 INFO File uploaded
+2025-10-28T14:33:05.172163+0100 INFO File uploaded
+2025-10-28T14:33:05.172163+0100 INFO File uploaded
+2025-10-28T14:33:05.175477+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:05.175477+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:05.175477+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
+2025-10-28T14:33:05.175477+0100 DEBUG Uploaded file: UploadedFile(file_id='9c4e777a-c278-49fc-a694-b4e148b4acc2', name='data_test.csv', type='text/csv', size=30575381, _file_urls=file_id: "9c4e777a-c278-49fc-a694-b4e148b4acc2"
+upload_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+delete_url: "/_stcore/upload_file/f25334c0-2b99-47d3-9665-f05a1f2c3da2/9c4e777a-c278-49fc-a694-b4e148b4acc2"
+)
