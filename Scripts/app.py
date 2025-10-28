@@ -46,7 +46,7 @@ logger.info("Application started")
 
 # chargement du fichier csv contenant les données réelles
 
-uploaded_file = st.file_uploader("upload your csv file", type="csv")
+uploaded_file = st.file_uploader("upload your data csv file", type="csv")
 logger.info("File uploaded")
 logger.debug(f"Uploaded file: {uploaded_file}")
 
