@@ -49,6 +49,7 @@ try:
                              data={"data": data_json})
     response.raise_for_status()  # lever une erreur pour les codes de statut 4xx/5xx
     logger.info("Requete POST envoyee avec succes a l'API.")
+    print("Reponse de l'API :", response.json(), response.status_code)
 except requests.exceptions.RequestException as e:
     logger.error(f"Erreur lors de l'envoi de la requete POST a l'API : {e}")
     raise
