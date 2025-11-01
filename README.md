@@ -2,15 +2,16 @@
 
 ## Objectif 
 
-Développement d'un dashboard interactif pour accéder à un outil de scoring décisionnel d'octroie de crédit bancaire
+Développement d'un dashboard interactif pour accéder à un outil de scoring décisionnel d'octroi de crédit bancaire.
+Ce dashboard devra permettre au personnel de la banque la restitution métier de l'appication de scoring ainsi que son explicabilité.
 
 
 ## Workflow
 
 1- configurer l'environnement de travail :
-    - création d'un repo git pour le versionning du projet
-    - création et activation d'un environnement virtuel
-    - installer les dépendances nécessaires au projet dans le venv
+    - créer d'un repo git pour le versionning du projet
+    - créer et activer un environnement virtuel
+    - installer les dépendances nécessaires dans le venv
     - récupérer les éléments clés pour le fonctionnement de l'api de scoring :
         - le modèle de scoring entraîné
         - les data de test pour inférer sur le modèle
@@ -21,24 +22,63 @@ Développement d'un dashboard interactif pour accéder à un outil de scoring d�
 
 2- développer un dashboard interactif :
     - définir les spécifications du dashboard
-    - implémenter le script Streamlit pour l'interface utilisateur
+    - élaborer la maquette du dashboard avec excalidraw
+    - implémenter le script Streamlit de développement du dashboard
+    - organiser les éléments du dashboard et les graphs
     - intégrer l'api
     - tester le dashboard en local
     - déployer sur le cloud (Render)
 
 3- assurer CI/CD et la veille technologique
 
+
+
 ## Spécifications du dashboard
 
-1- visualisation du profil client :
-    - affichage des caractéristiques principales de la demande (montant, échéance, annuité)
-    - affichage du profil client (niveau de revenus, capacité d'endettement, âge, etc)
-    - graphs du profil de risque du client
+Objectifs métier :
 
-2- visualisation de la prédiction :
-    - visualisation du score 
-    - visualisation de la probabilité associée à une barre colorimétrique d'éloignement du seuil
-    - visualisation des principales features influentes sur la prédiction
+- filtrer et rechercher des dossiers clients
+- pouvoir accéder rapidement aux predictions du modèle de scoring
+- visualiser les scores et les probabilité de solvabilité des clients
+- comprendre et justifier les décisions = explicabilité
+
+
+
+Résultats attendus :
+
+- résultat du scoring = décision + probabilité
+- variables explicatives majeures du modèle 
+- explicabilité du score
+
+
+
+## Maquette du dashboard
+
+1- Vue statistique globale du modèle (top bar):
+
+    - nbre total des demandes et répartition des taux acceptation / refus
+    - indicateurs de performance du modèle : drift / taux d'erreur / score_moyen_client
+    - feature importance globale
+
+
+2- identification du client (side bar):
+
+    - sélection d'un client via un ID 
+    - score de solvabilité du client + décision
+    - affichage des caractéristiques principales du profil client (âge, revenus, dettes)
+    - affichage des caractéristiques principales de la demande (montant, échéance, annuité)
+
+       
+
+3- visualisation de la prédiction (central bar) :
+    
+    - explicabilité locale : visualisation des principales features influentes sur la prédiction
+    - graphs du profil de risque du client : 
+        - visualisation du profil client comparativement aux données globales (possibilité de sélectionner parmi les 5 features principales) / graph de distribution de la variable
+        - évaluation de la capacité d'endettement du client comparativement à la moyenne
+
+
+
 
 
 
